@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  h1 {
+    @apply font-[Inter] text-[18px] sm:text-[24px] md:text-[30px] lg:text-[34px] font-medium;
+  }
+
+  h2 {
+    @apply font-[Inter] text-[14px] sm:text-[20px] md:text-[24px] lg:text-[28px] font-medium;
+  }
+
+  h3 {
+    @apply font-[Inter] text-[14px] sm:text-[16px] md:text-[20px] lg:text-[24px] font-medium;
+  }
+
+  h4 {
+    @apply font-[Inter] text-[12px] sm:text-[14px] md:text-[18px] lg:text-[20px] font-medium;
+  }
+
+  h5 {
+    @apply font-[Inter] text-[12px] sm:text-[14px] md:text-[16px] lg:text-[18px] font-normal;
+  }
+
+  bgSecondary {
+    @apply bg-[#c4e3f3];
+  }
+
+  .colorButton {
+    @apply bg-[#41ade2] text-white border-2 border-[#41ade2] text-[14px] px-4 py-2 rounded-md ;
+  }
+
+  .colorButton:hover {
+    @apply text-[#41ade2] bg-white border-2 border-[#41ade2];
+  }
+
+  .colorButton:active {
+    @apply bg-[#41ade2] text-white;
+  }
+}
