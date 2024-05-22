@@ -118,13 +118,15 @@ const Dashboard = () => {
     <>
       <div className="w-full min-h-[95%] p-4">
         <div className="w-[100%] shadow-md rounded-md bg-[#6ab2f5] bg-opacity-[0.2] py-4 px-2">
-          <h4 className="font-[600] border-b-[2px] border-[#bababa] px-4 py-2 mb-2">
+          <h3 className="font-[600] border-b-[2px] border-[#bababa] px-4 py-2 mb-2">
             All Saved Books
-          </h4>
+          </h3>
 
           <div className="px-4 py-2 flex flex-row justify-between items-center">
             <div>
-              <span className="mr-4 font-[500] text-[18px]">Show Entries</span>
+              <span className="mr-4 font-[500] text-[14px] sm:text-[18px]">
+                Show Entries
+              </span>
               <select
                 className="border-2 border-[#41ade2] rounded-sm bg-transparent"
                 value={booksPerPage}
@@ -137,7 +139,7 @@ const Dashboard = () => {
               </select>
             </div>
 
-            <div className="flex flex-row justify-center items-center w-[30%] gap-1">
+            <div className="hidden sm:flex flex-row justify-center items-center w-[30%] gap-1">
               <button
                 className={`colorButton ${
                   currentPage === 1 ? "cursor-not-allowed" : "cursor-pointer"

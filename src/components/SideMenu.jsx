@@ -27,7 +27,7 @@ const SideMenu = () => {
 
   return (
     <div
-      className={`bg-[#6ab2f5] bg-opacity-[0.2] shadow-lg py-[3vh] h-[90vh] relative ${
+      className={`hidden sm:block bg-[#6ab2f5] bg-opacity-[0.2] shadow-lg py-[3vh] h-[90vh] relative ${
         isTabletView
           ? "w-[90px]  transition-all duration-300 ease-in-out transform "
           : "w-[300px] transition-all duration-300 ease-in-out transform"
@@ -101,7 +101,7 @@ const SideMenu = () => {
             </div>
 
             <h5
-              className={`ml-6 font-[600] text-[18px] text-nowrap ${
+              className={`ml-6 font-[600]  text-[18px] text-nowrap ${
                 isTabletView
                   ? "hidden transition-all duration-300 ease-in-out transform "
                   : "transition-all duration-300 ease-in-out transform"

@@ -141,7 +141,7 @@ const SearchBook = () => {
 
   return (
     <>
-      <div className="px-4 min-h-[90%] bg-[#6ab2f5] bg-opacity-[0.2] m-4 rounded-lg py-10">
+      <div className="  px-2 sm:px-4 min-h-[90%] bg-[#6ab2f5] bg-opacity-[0.2] m-2 sm:m-4 rounded-lg py-10">
         <div className="flex flex-col items-center justify-between mb-6 ">
           <h1 className="font-[600] mb-4">Search Book</h1>
 
@@ -151,7 +151,7 @@ const SearchBook = () => {
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
               placeholder="5 AM Club"
-              className="border-l-2 border-t-2 border-b-2 border-gray-500 rounded-s-full px-4 py-2 w-[50%] bg-white focus:outline-none "
+              className="border-l-2 border-t-2 border-b-2 border-gray-500 rounded-s-full px-4 py-2 w-[80%] sm:w-[50%] bg-white focus:outline-none "
             />
             <button
               className="border-2 border-gray-500 p-2 rounded-e-full bg-white "
@@ -174,7 +174,7 @@ const SearchBook = () => {
         ) : (
           <div className="w-[100%] h-[90%] shadow-md rounded-md bg-[#6ab2f5] bg-opacity-[0.2] py-2 px-2">
             <div className="flex flex-row justify-between items-center border-b-[2px] border-[#bababa] px-4 py-2 mb-2">
-              <h4 className="font-[600]">All Books</h4>
+              <h3 className="font-[600]">All Books</h3>
 
               <button
                 onClick={downloadCSV}
@@ -187,7 +187,7 @@ const SearchBook = () => {
 
             <div className="px-4 py-2 flex flex-row justify-between items-center ">
               <div>
-                <span className="mr-4 font-[500] text-[18px] ">
+                <span className="mr-4 font-[500] text-[14px] sm:text-[18px] ">
                   Show Entries
                 </span>
                 <select
@@ -202,7 +202,7 @@ const SearchBook = () => {
                 </select>
               </div>
 
-              <div className="flex flex-row justify-center items-center w-[30%] gap-1">
+              <div className=" hidden sm:flex flex-row justify-center items-center w-[30%] gap-1">
                 <button
                   onClick={() => setPageNo(pageNo - 1)}
                   className={`colorButton ${
