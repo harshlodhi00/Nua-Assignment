@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 
-import MenuOpen from "../Assets/SuperAdmin/MenuOpen.svg";
-import MenuClose from "../Assets/SuperAdmin/MenuClose.svg";
+import { AiOutlineMenuUnfold } from "react-icons/ai";
+import { AiOutlineMenuFold } from "react-icons/ai";
 import { NavLink, useNavigate } from "react-router-dom";
 import { PiBooksDuotone } from "react-icons/pi";
 import { IoSearchSharp } from "react-icons/io5";
@@ -54,11 +54,11 @@ const SideMenu = () => {
 
         {isTabletView ? (
           <button onClick={() => setIsTabletView(!isTabletView)}>
-            <img src={MenuOpen} alt="MenuOpen" className="" />
+            <AiOutlineMenuUnfold size={30} />
           </button>
         ) : (
           <button onClick={() => setIsTabletView(!isTabletView)}>
-            <img src={MenuClose} alt="MenuClose" className="" />
+            <AiOutlineMenuFold size={30} />
           </button>
         )}
       </div>
