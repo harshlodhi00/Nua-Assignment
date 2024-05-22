@@ -15,9 +15,13 @@ import SearchBook from "./pages/SearchBook";
 const RequireAuth = ({ children, loginPath }) => {
   const email = localStorage.getItem("email");
   const navigate = useNavigate();
+  useEffect(() => {
+    if (!email) {
+      navigate("/login");
+    }
+  }, [email, navigate]);
 
   if (!email) {
-    navigate(loginPath);
     return null;
   } else {
     return children;
